@@ -63,4 +63,18 @@
                         <h1 class="text-white mb-4">Make Appointment</h1>
                         <form method="post">
                             {% csrf_token %}
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+    
+                                    <label for="id_name">Name:</label>
+                                    <input type="text" name="name" maxlength="100" required="" id="id_name">
+                                    <br>
+
+                                    <label for="id_email">Email:</label>
+                                    <input type="email" name="email" maxlength="100" required="" id="id_email">
+                                    <br>
+
+                                    <label for="id_date">Date:</label>
+                                    <input type="date" name="date" required="" id="id_date">
+                                    <br>
                     
