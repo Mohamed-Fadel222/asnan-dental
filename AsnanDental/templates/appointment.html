@@ -63,4 +63,10 @@
                         <h1 class="text-white mb-4">Make Appointment</h1>
                         <form method="post">
                             {% csrf_token %}
-                    
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+    
+                                    <label for="id_name">Name:</label>
+                                    <input type="text" name="name" maxlength="100" required="" id="id_name">
+                                    <br>
+            
