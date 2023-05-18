@@ -4,6 +4,7 @@ from .models import Appointment, Contact
 
 class AppointmentForm(forms.ModelForm):
     class Meta:
+        model = Appointment
 
 class ContactForm(forms.ModelForm):
     class Meta:
