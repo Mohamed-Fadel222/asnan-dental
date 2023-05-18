@@ -32,3 +32,8 @@ def appointment(request):
             return render(request, 'review.html', {'dataform': dataform})
         else:
             redirect(appointment)
+                return render(request, 'appointment.html', {'dataform': AppointmentForm})
+
+
+def review(request):
+    pass
