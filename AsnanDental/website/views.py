@@ -23,3 +23,7 @@ def price(request):
 def service(request):
     return render(request, 'service.html')
 
+def appointment(request):
+    if request.method == "POST":
+        dataform = AppointmentForm(request.POST)
+        if dataform.is_valid():
