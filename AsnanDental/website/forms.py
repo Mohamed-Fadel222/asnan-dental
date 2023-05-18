@@ -8,4 +8,5 @@ class AppointmentForm(forms.ModelForm):
         fields = '__all__'
 
 class ContactForm(forms.ModelForm):
-    
+    class Meta:
+ 
