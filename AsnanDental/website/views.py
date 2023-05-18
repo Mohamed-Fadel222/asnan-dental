@@ -14,3 +14,6 @@ def contact(request):
         return redirect(contact)
     # name = request.POST['message-name']
     return render(request, 'contact.html', {'dataform': ContactForm})
+    def about(request):
+    return render(request, 'about.html')
+
