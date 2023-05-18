@@ -9,5 +9,7 @@ class Appointment(models.Model):
     date = models.DateField(null=True)
     time = models.TimeField(null=True)
 
-
+    def __str__(self):
+        return self.name
+        
 
