@@ -27,3 +27,8 @@ def appointment(request):
     if request.method == "POST":
         dataform = AppointmentForm(request.POST)
         if dataform.is_valid():
+            
+            dataform.save()
+            return render(request, 'review.html', {'dataform': dataform})
+        else:
+            redirect(appointment)
